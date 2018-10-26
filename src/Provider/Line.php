@@ -32,12 +32,12 @@ class Line extends AbstractProvider
 
     public function getBaseAuthorizationUrl()
     {
-        return 'https://access.line.me/dialog/oauth/weblogin';
+        return 'https://access.line.me/oauth2/v2.1/authorize';
     }
 
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://api.line.me/v2/oauth/accessToken';
+        return 'https://api.line.me/oauth2/v2.1/token';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)

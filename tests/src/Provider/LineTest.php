@@ -48,7 +48,7 @@ class LineTest extends \PHPUnit_Framework_TestCase
         $url = $this->provider->getBaseAccessTokenUrl([]);
         $uri = parse_url($url);
 
-        $this->assertEquals('/v2/oauth/accessToken', $uri['path']);
+        $this->assertEquals('/oauth2/v2.1/token', $uri['path']);
     }
 
     public function testResourceOwnerDetailsUrl()
